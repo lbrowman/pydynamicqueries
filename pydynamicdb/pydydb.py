@@ -26,7 +26,15 @@ class DB(object):
         """
         Args:
             connection_string (dict):   This is the connection string to the desired database.
-                                        It should include the database name,host,user and password
+                                        It should include the database name,host,user and password.
+                                        Examples:
+                                        Mysql = {"database":"database", "host":"localhost",
+                                                "user":"user", "password":"password"}
+                                        ODBC = {
+                                                "database":"database", "host":"localhost",
+                                                "user":"user", "password":"password",
+                                                "driver":"SQL Server", "port":1433
+                                                }
             type (str):      This is the connection type.
                                         If it is not specified it will default to  mysql
         """
