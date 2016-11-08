@@ -43,6 +43,7 @@ class Db(object):
 
     def connect(self):
         """ Create connection object to the database"""
+        connection = None
         if self.connection_type == 'mysql':
             connection = pymysql.connect(**self.conn)
         elif self.connection_type == 'odbc':
@@ -50,7 +51,7 @@ class Db(object):
                                         DRIVER={self.conn['driver']};SERVER=self.conn['host'];PORT=self.conn['port'];
                                         DATABASE=self.conn['database'];UID=self.conn['user'];PWD=self.conn['password'];
                                         """)
-        else:
+        elif self.connection_type == 'postgre':
             connection = psycopg2.connect(**self.conn)
         return connection
 
