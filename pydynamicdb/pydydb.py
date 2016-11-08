@@ -153,23 +153,7 @@ class Db(object):
             fixed_value = "'"+value+"'"
         return fixed_value
 
-CON = {
-    "database":"incidents", "host":"localhost",
-    "user":"deson", "password":"Smile123"}
-QUERY = {
-    "select_list":['event_id', 'description'],
-    "table":"incident",
-    "conditions":[{
-        "name":"event_id",
-        "value":['1', '2', '3']
-    }],
-    "orderby":"default",
-    "order":"desc",
-    "groupby":"default",
-    "conjunction":None
-    }
-DB = Db(CON)
-print DB.select(QUERY)
+
 
 
 
