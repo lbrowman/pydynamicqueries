@@ -43,8 +43,10 @@ dbObject.select(QUERY)
 
 ### Expected Return
 
+```python
 [(1, 'this is a demo demo demo demo demo demo demo'), (1, 'a bites dog dog bites man back man tells goat'), (6, 'This is powr outage for a long time idk ssss       asdljlaksdjlkj'), (6, 'there has been a power outage for the longest while. Please assist'), (1, 'Fire outsideeee near la penitance. it burns'), (1, 'There is a fire next door.. Send help @!!!!!!!!!')]
 
+```
 
 ```python
 
@@ -73,4 +75,8 @@ dbObject.select(QUERY)
 
 ### Expected Return
 
+```python
+
 [{'event_id': 1, 'description': 'this is a demo demo demo demo demo demo demo'}, {'event_id': 1, 'description': 'a bites dog dog bites man back man tells goat'}, {'event_id': 6, 'description': 'This is powr outage for a long time idk ssss       asdljlaksdjlkj'}, {'event_id': 6, 'description': 'there has been a power outage for the longest while. Please assist'}, {'event_id': 1, 'description': 'Fire outsideeee near la penitance. it burns'}, {'event_id': 1, 'description': 'There is a fire next door.. Send help @!!!!!!!!!'}]
+
+```
