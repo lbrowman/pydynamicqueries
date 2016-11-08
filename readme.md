@@ -18,7 +18,7 @@ The following packages must be installed on your local machine for this to work
 
 ```python
 
-import pydynamicdb.dbutil.DB
+from pydynamicdb.pydydb import DbB
 
 connection_string = {
     "database":"database", "host":"localhost",
@@ -50,7 +50,7 @@ dbObject.select(QUERY)
 
 ```python
 
-import pydynamicdb.dbutil.DB
+from pydynamicdb.pydydb import Db
 
 connection_string = {
     "database":"database", "host":"localhost",

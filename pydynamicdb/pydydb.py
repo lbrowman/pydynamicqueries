@@ -8,11 +8,11 @@ Dependencies:
     2. pyodbc
 
 How to use:
-    import pydynamicdb.dbutil.DB
+    from pydynamicdb.pydydb import Db
 
     contype = 'mysql' #this can be any structured database except pgAdmin
 
-    db = pydynamicdb.pydydb.DB(connection_params,contype)
+    db = Db(connection_params,contype)
 
 
 """
